@@ -275,7 +275,7 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -285,7 +285,7 @@ section .title::after{
 
 .about .about-content .right p{
     text-align: justify;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .about .about-content .right p span{
@@ -1323,6 +1323,12 @@ footer span a:hover{
     .skills .skills-content .left .text{
         font-size: 19px;
     }
+    .about .about-content .right .text p {
+        font-size: 5px;
+    }
+    .about .about-content .right .text {
+        font-size: 30px;
+    }
     .contact .right form .fields{
         flex-direction: column;
     }
@@ -1342,3 +1348,10 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+@media (max-width: 450px)  {
+    .home .home-content .text-2{
+        font-size: 40px;
+    }  
+}
+
