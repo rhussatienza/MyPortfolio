@@ -45,6 +45,7 @@ section{
     font-family: 'Montserrat', sans-serif;
 }
 .about .about-content,
+.start .start-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -1352,6 +1353,9 @@ footer span a:hover{
 @media (max-width: 450px)  {
     .home .home-content .text-2{
         font-size: 40px;
-    }  
+    } 
+    .start .title::after {
+      font-size: 17.5px;
+    } 
 }
 
