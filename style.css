@@ -1359,9 +1359,9 @@ footer span a:hover{
     } 
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
     .start .title::after {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
