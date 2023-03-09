@@ -705,7 +705,7 @@ span:nth-child(2) {
 }
 
 .icon:hover{
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
 /*old skills styling*/
