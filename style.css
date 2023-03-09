@@ -708,6 +708,8 @@ span:nth-child(2) {
     transform: scale(1.05);
 }
 
+/*old skills styling*/
+/*
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
@@ -747,6 +749,7 @@ span:nth-child(2) {
 .skills-content .right .mysql::before{
     width: 70%;
 }
+*/
 
 /*Teams Styling start */
 .teams {
