@@ -692,9 +692,22 @@ span:nth-child(2) {
     color: darkcyan;
     font-style: italic;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 20px;
+.skills .skills-content .right .language-wrapper{
+    margin-left: 100px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);   
 }
+
+.icon {
+    width: 125px;
+    height: 125px;
+}
+
+.icon:hover{
+    transform: scale(1.05);
+}
+
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
@@ -1293,6 +1306,13 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .skills .skills-content .right .language-wrapper{
+        margin:auto;
+    }
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -1361,7 +1381,7 @@ footer span a:hover{
 
 @media (max-width: 380px) {
     .start .title::after {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
