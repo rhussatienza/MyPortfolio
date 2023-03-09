@@ -96,7 +96,7 @@ section .title::after{
 }
 
 .navbar.sticky{
-    padding: 20px 0;
+    padding: 15px 0;
     background: darkcyan;
 }
 
@@ -1334,6 +1334,10 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .about .about-content .right p{
+        text-align: justify;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1385,6 +1389,10 @@ footer span a:hover{
 @media (max-width: 380px) {
     .start .title::after {
         font-size: 14px;
+    }
+    .about .about-content .right p{
+        text-align: justify;
+        font-size: 15px;
     }
 }
 
