@@ -427,7 +427,7 @@ span:nth-child(2) {
     color: forestgreen;
   }
 .start-content .senior {
-    color: darkblue;
+    color:rgba(65, 169, 207, 0.685);
   }
   
 .start-content .secondary {
@@ -435,7 +435,7 @@ span:nth-child(2) {
   }
   
 .start-content .primary {
-    color:#ff00bf;
+    color:rgba(65, 169, 207, 0.685);
   }
 
   .wrapper{
