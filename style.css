@@ -707,9 +707,11 @@ span:nth-child(2) {
 }
 
 .icon:hover{
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
+/*old skills styling*/
+/*
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
@@ -749,6 +751,7 @@ span:nth-child(2) {
 .skills-content .right .mysql::before{
     width: 70%;
 }
+*/
 
 /*Portfolio Section Styling start*/
 .portfolio .title::after{
