@@ -776,7 +776,7 @@ span:nth-child(2) {
 }
 
 .portfolio .row img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -997,13 +997,13 @@ span:nth-child(2) {
     background: #07182E;
     cursor: pointer;
     display: flex;
-    position: relative;
-    place-content: center;
+    position: relatienter;
     place-items: center;
     overflow: hidden;
   }
   .teams .carousel .card .box{
-    display: flex;
+    display: flex;ve;
+    place-content: c
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1482,6 +1482,14 @@ footer span a:hover{
         font-size: 15px;
     }
 }
+
+
+@media (max-width: 370px) {
+    .portfolio .portfolio-content .row img{
+        max-width: 90%;
+    }
+}
+
 
 
 
