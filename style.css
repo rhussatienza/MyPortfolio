@@ -777,7 +777,7 @@ span:nth-child(2) {
 
 .portfolio .row img {
     width: 100%;
-    border-radius: 18x;
+    border-radius: 8px;
     display: block;
     transition: transform 0.5s;
 }
