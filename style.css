@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -41,12 +43,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.start, .about, .services, .skills, .teams, .contact, footer{
+.start, .about, .portfolio, .services, .skills, .teams, .contact, footer{
     font-family: 'Montserrat', sans-serif;
 }
 .about .about-content,
 .start .start-content,
 .services .serv-content,
+.portfolio .portfolio-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -91,7 +94,7 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;  
 }
 
@@ -542,16 +545,15 @@ span:nth-child(2) {
     box-shadow:  2px 2px 0 darkcyan;
   }
 /* services section styling */
-.services, .teams{
+.services, .portfolio{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.portfolio .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.services .title::after{
     background: #111;
     content: "What I Provide";
 }
@@ -751,6 +753,85 @@ span:nth-child(2) {
 }
 */
 
+/*Portfolio Section Styling start*/
+.portfolio .title::after{
+    background: #111;
+    content: "What I Do";
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.portfolio .row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.portfolio .row img {
+    width: 100%;
+    border-radius: 18x;
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+.portfolio .row .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), darkcyan);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.portfolio .row .layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.portfolio .row .layer p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1;
+}
+.portfolio .row .layer i{
+    color: darkcyan;
+    margin-top: 20px;
+    font-size: 20px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.portfolio .row:hover img{
+    transform: scale(1.1);
+}
+.portfolio .row:hover .layer{
+    height: 100%;
+}
+
+
+/*end of portfolio section styling*/
+
 /*Teams Styling start */
 .teams {
     background: url("Images/educ.jpg");
@@ -759,7 +840,13 @@ span:nth-child(2) {
     background-size: cover;
     color: white;
     }
-
+.teams .title::before{
+    background-color: white;
+}    
+.teams .title::after{
+    background: darkblue;
+    content: "What I Provide";
+}    
 .teams .carousel .card {
     text-align: center;
     border-radius: 20px;
